@@ -4,6 +4,7 @@ const app = express();
 require('dotenv').config();
 let port = (process.env.PORT);
 
+/*This is simply for pinging the service*/
 app.get('/', (req, res) => {
     res.json({message: "Hello World!"})
 })
